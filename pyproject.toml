@@ -44,7 +44,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mdsnake = "genr.main:app" # Add this only if you have a cli
+genr = "genr.main:app" # Add this only if you have a cli
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -33,3 +33,6 @@ Lists all the templates
 ```
 genr list
 ```
+
+# Want to contribute?
+If you want to contribute a suggestion or bug fix, create a issue and I'll respond to you as quickly as possible
