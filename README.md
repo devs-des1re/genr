@@ -1,5 +1,5 @@
 ![pylint rated 10.00/10](https://img.shields.io/badge/pylint-10.00-green)
-![version 0.0.1](https://img.shields.io/badge/version-v0.0.1-green)
+![version 0.0.2](https://img.shields.io/badge/version-v0.0.2-green)
 
 # genr
 What is `genr`? Well `genr` is a cli which can generate essential files for a python github repository
