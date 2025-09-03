@@ -1,0 +1,58 @@
+[build-system]
+requires = [
+    "setuptools==80.9.0",
+    "setuptools_scm==9.2.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genr" # Project Name
+description = "Generates default templates ready to use via a cli" # Project Description
+readme = "README.md"
+version = "0.0.1" # Project Version
+requires-python = ">=3.10" # Python Requirement
+license = "MIT" # Project License
+license-files = ["LICENSE"]
+authors = [{name="devs_des1re", email="arjunbrij8811@gmail.com"}] # Authors
+maintainers = [{name="devs_des1re", email="arjunbrij8811@gmail.com"}] # Maintainers
+
+keywords = [
+    "app",
+    "macOS",
+    "windows",
+    "linux",
+    "flatpak",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pip>=21.2",
+    "typer~=0.16",
+]
+
+[project.scripts]
+mdsnake = "genr.main:app" # Add this only if you have a cli
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["genr"] # Folder name inside of src
+namespaces = false
+
+[project.urls]
+Homepage = "https://github.com/devs-des1re/genr"
+
+[tool.setuptools.package-data]
+mypkg = ["*.txt", "*.rst"]

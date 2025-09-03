@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "" # Project Name
+description = "" # Project Description
+readme = "README.md"
+version = "0.0.1" # Project Version
+requires-python = ">=3.10" # Python Requirement
+license = "MIT" # Project License
+license-files = ["LICENSE"]
+authors = [{name="", email=""}] # Authors
+maintainers = [{name="", email=""}] # Maintainers
+
+keywords = [
+    "app",
+    "macOS",
+    "windows",
+    "linux",
+    "flatpak",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pip>=21.2",
+]
+
+[project.scripts]
+mdsnake = "" # Add this only if you have a cli
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = [""] # Folder name inside of src
+namespaces = false
+
+[tool.setuptools.package-data]
+mypkg = ["*.txt", "*.rst"]
