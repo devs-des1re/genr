@@ -6,8 +6,8 @@ from rich.console import Console
 from rich.markdown import Markdown
 
 from .dialog import print_error, print_success
-from .info import get_info
 from .generate import generate_file
+from .info import get_info
 
 app = typer.Typer(no_args_is_help=True)
 console = Console()
@@ -24,7 +24,7 @@ def generate(file: str):
     try:
         generate_file(cwd, file)
         print_success("The file has successfully been generated!")
-    except Exception as error:
+    except ValueError as error:
         print_error(f"There was an error while generating the file: {error}")
 
 @app.command()
@@ -37,11 +37,11 @@ def info(file: str):
     try:
         md = Markdown(get_info(file))
         print_success(md)
-    except Exception as error:
+    except ValueError as error:
         print_error(f"There was an error while retreiving the info: {error}")
 
-@app.command()
-def list():
+@app.command(name="list")
+def list_templates():
     """Lists all the templates
     """
     templates = pathlib.Path(__file__).parent / "templates"

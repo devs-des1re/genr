@@ -1,6 +1,5 @@
 """Libraries"""
 import pathlib
-import os
 import shutil
 
 templates = pathlib.Path(__file__).parent / "templates"
