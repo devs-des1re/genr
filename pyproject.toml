@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 name = "genr" # Project Name
 description = "Generates default templates ready to use via a cli" # Project Description
 readme = "README.md"
-version = "0.0.2" # Project Version
+version = "0.1.0" # Project Version
 requires-python = ">=3.10" # Python Requirement
 license = "MIT" # Project License
 license-files = ["LICENSE"]
