@@ -14,6 +14,18 @@ console = Console()
 
 """Functions"""
 @app.command()
+def init():
+    """Initializes the essential files
+    """
+    cwd = pathlib.Path.cwd()
+    try:
+        generate_file(cwd, "pyproject")
+        generate_file(cwd, "gitignore")
+        generate_file(cwd, "license")
+    except ValueError as error:
+        print(f"There was an error while initalizing the files: {error}")
+
+@app.command()
 def generate(file: str):
     """Generates a file for a github repository
 

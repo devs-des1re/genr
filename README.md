@@ -1,5 +1,5 @@
 ![pylint rated 10.00/10](https://img.shields.io/badge/pylint-10.00-green)
-![version 0.1.0](https://img.shields.io/badge/version-v0.1.0-green)
+![version 0.2.0](https://img.shields.io/badge/version-v0.1.0-green)
 
 # genr
 What is `genr`? Well `genr` is a cli which can generate essential files for a python github repository
@@ -16,6 +16,12 @@ pip install genr
 ```
 
 # Commands
+Initalizes the essential files
+
+```
+genr init
+```
+
 Generate a template
 
 ```
@@ -35,4 +41,4 @@ genr list
 ```
 
 # Want to contribute?
-If you want to contribute a suggestion or bug fix, create a issue and I'll respond to you as quickly as possible
+If you want to contribute a suggestion or bug fix, create a issue and I'll respond to you as quickly as possible!
